@@ -235,6 +235,7 @@ footer{
 .page-nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 2em 0em;
     background-color: #F5F0EA;
     position: sticky;
@@ -303,10 +304,11 @@ li{
 }
 
 .block{
-    padding: 1.5em 2em;
+    padding: 1.5em 1em;
     background-color: #E1D7DD;
-    border-left: 6px solid #272333;
-    margin: 1em 2em;
+    border-left: 4px solid #272333;
+    margin: 1em 0em;
+    padding: 1.5em 1em;
 }
 
 .goals{
@@ -339,9 +341,11 @@ li{
     padding-top: 0em;
 }
 
+
 ol, ul{
-    margin: 0.5em 2em;
+    margin: 0.5em 1em;
 }
+
 
 ol > img{
     padding: 1em 0em 2.5em 0em;
@@ -371,7 +375,13 @@ h4{
     gap: 5%;
     background-color: #FFFFFF;
     padding: 4em 6em;
+    margin-bottom: 2em;
 }
+
+.hamburger-menu{
+    display: none;
+}
+
 
 
 
@@ -414,7 +424,30 @@ h4{
     li{
         font-size: medium; 
     }
+
+    h4{
+        font-weight: 500;
+        font-size: 1em;  
+    }
+
+    .see-more{
+        display: flex;
+        align-items: center;
+        gap: 5%;
+        background-color: #FFFFFF;
+        padding: 2em 4em;
+    }
 }
+
+
+
+
+
+
+
+
+
+
 
 @media  (max-width:680px) {
     p{
@@ -434,10 +467,35 @@ h4{
         color: #14142B;
     }
 
+    h4{
+        font-size: 1em;  
+    }
+
     li{
         font-size: medium;
     }
+
+    .see-more{
+        padding: 1em 2em;
+    }
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media  (max-width:600px) {
@@ -454,7 +512,7 @@ h4{
     p{
         font-family: "DM Sans", sans-serif;
         font-weight: 300;
-        font-size: medium;  
+        font-size: small;  
         line-height: 200%;
         color: #4E4B66;
     }
@@ -466,6 +524,10 @@ h4{
         line-height: 150%;
         letter-spacing: 0.02em;
         color: #14142B;
+    }
+
+    h4{
+        font-size: 1em;  
     }
 
     .nav-content{
@@ -530,50 +592,85 @@ h4{
     gap: 2em;
     height: auto;
     padding-top: 3em;
-}
+    }
 
-.horizontal-line{
-    width: 5em;
-}
+    .horizontal-line{
+        width: 5em;
+    }
 
-.section-right{
-    position: relative;
-    top: 0em;
-    padding-bottom: 0em;
-}
+    .section-right{
+        position: relative;
+        top: 0em;
+        padding-bottom: 0em;
+    }
 
-.projects{
-    align-items: center;
-}
+    .projects{
+        align-items: center;
+    }
 
-#selected-projects{
-    padding-bottom: 4em;
-}
+    #selected-projects{
+        padding-bottom: 4em;
+    }
 
-.section-text > *{
-    text-align: center;
-}
+    .section-text > *{
+        text-align: center;
+    }
 
-#section-content{
-    align-items: center;
-}
+    #section-content{
+        align-items: center;
+    }
 
-.CTAs > img{
-    display: none;
-}
+    .CTAs > img{
+        display: none;
+    }
 
-button{
-    padding: 16px 24px;
-}
+    button{
+        padding: 16px 24px;
+    }
 
-#footer-content{
-    flex-direction: column-reverse;
-    gap: 2em;
-    padding: 3em 0em;
-}
+    #footer-content{
+        flex-direction: column-reverse;
+        gap: 2em;
+        padding: 3em 0em;
+    }
 
-li{
-    font-size: medium;
-}
+    li{
+        font-size: small;
+    }
+
+    .see-more{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+        background-color: #FFFFFF;
+        padding: 2em 3em;
+    }
+
+    .see-more > img{
+        width: 100%;
+    }
+
+    .see-more > div{
+        width: 100%;
+        align-items: center;
+    }
+
+    h4{
+        text-align: center;
+    }
+
+    .guide, .CTA-text{
+        display: none;
+    }
+
+    .back > img {
+        width: 2em;
+    }
+
+    .block{
+        padding: 1.5em 1em;
+        margin: 1em 0;
+    }
 
 }
