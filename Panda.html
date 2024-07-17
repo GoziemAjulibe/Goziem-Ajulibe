@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panda</title>
+    <link href="./styles.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    </head>
+
+
+    <body>
+        <main>
+            <div class="page-nav">
+                <a href="./index.html">
+                    <div class="back">
+                      <img src="./Icons/chevron-left.png" alt="back arrow" width="30%">
+                      <p class="CTA-text">Back</p>
+                    </div>
+                  </a>
+                <p class="page-heading">Panda</p>
+                <p class="guide">Content Guide</p>
+                <div class="hamburger-menu">
+                  <img src="./Icons/hamburger menu.svg" alt="hamburger-menu" width="32px">
+                </div>
+            </div>
+
+            <div class="introduction">
+                <p>Panda is an asset generator that was designed for internal use within Paystack.</p>
+          
+                <img src="./image assets/Panda/Intro Image.svg" alt="an image showing the mobile and web versions of Panda" width="100%"/>
+            </div>
+
+            <div class="section-heading">
+                <img src="./Icons/section icon.svg" alt="section icon">
+                <p class="section-text">THE PROBLEM</p>
+            </div>
+            
+          
+            <div class="the-problem">
+                <p>The design studio team at Paystack produced all the graphic assets that were used by various teams across the company. These graphic assets included social media posts for events, product launch announcements, certificates, zoom backgrounds, etc. The requests for these assets were very frequent, and they caused 2 major problems;</p>
+                <ul>
+                    <li>Repetitive tasks: Most of the design requests required minor adjustments on predefined layouts, consuming significant time that could be spent on more challenging tasks.</li>
+                    <li>Long turn around times: Some design requests required multiple conversations between the design studio team and the requesters, leading to long turn around times on those requests.</li>
+                </ul>
+            </div>
+
+            <div class="section-heading">
+                <img src="./Icons/section icon.svg" alt="section icon">
+                <p class="section-text">GOALS</p>
+              </div>
+
+            <div class="goals">
+                <p>To address these problems, we needed to explore how we could streamline the creation of graphic assets by implementing an assets generator that would;</p>
+                <ul>
+                    <li>Increase the efficiency of the design studio team</li>
+                    <li>Ensure faster turnaround time on requests</li>
+                    <li>Increase the capacity of the team to take on and deliver more (challenging) tasks</li>
+                </ul>
+            </div>
+          
+            <div class="role">
+                <div class="section-heading">
+                    <img src="./Icons/section icon.svg" alt="section icon">
+                    <p class="section-text">ROLE</p>
+                </div>
+                <p>I worked on this project with a team of 7 people. 2 backend engineers, a frontend engineer, a DevOps engineer, a product manager, and another product designer. I worked with the other designer to conduct research, define the user flow, and design the prototypes.</p>
+            </div>
+
+            <div class="research">
+                <div class="section-heading">
+                    <img src="./Icons/section icon.svg" alt="section icon">
+                    <p class="section-text">RESEARCH</p>
+                </div>
+                <div class="subsection">
+                    <p>The design studio team shared a detailed brief sharing the issues they had been experiencing, and what they envisioned Panda to be. Based on the brief they shared, we created a list of assumption statements. We were assuming that;</p>
+                    <ol>
+                        <li>Our target users were the design studio team, and Stacks (non-designers in other teams within Paystack)</li>
+                        <li>The Stacks wanted faster turn-around time for their design requests.</li>
+                        <li>The design studio team wanted to spend less time working on repetitive tasks.</li>
+                        <li>The design studio team wanted to make sure that every design sent off was good enough and consistent with the Paystack brand.</li>
+                        <li>Users needed multiple sizes of posters for different touchpoints (banners, social media, billboards, etc)</li>
+                    </ol>
+                </div>
+                <div class="subsection">
+                    <p>Our next step was to speak with our identified target users to validate our assumptions, as well as fill in any knowledge gaps that we had. The goals of our research were:</p>
+                    <ul>
+                        <li>To validate our target users.</li>
+                        <li>To validate and understand the problems we were trying to solve for them.</li>
+                        <li>To understand which walkarounds the design studio team had previously implemented to solve these problems.</li>
+                        <li>To understand the current asset request and design process.</li>
+                    </ul>
+                </div>
+                <div class="subsection">
+                    <p class="bold">Insights</p>
+                    <ul>
+                        <li>Our assumptions were correct.</li>
+                        <li>The asset request and design process looked like this;</li>
+                        <div class="image">
+                            <img src="./image assets/Panda/Scenario 1.svg" alt="image showing one of the scenarios while requesting for an asset" width="100%" />
+                        </div>
+                        <div class="image">
+                            <img src="./image assets/Panda/Scenario 2 .svg" alt="image showing the scenario when detials changed after the asset had been created by the design studio team" width="100%" />
+                        </div>
+                        <li>The Design Studio team had already tried a walkaround with Dev Rel team by creating editable templates on Figma. However, this did not work out because it involved non-designers needing to learn how to use a new tool.</li>
+                    </ul>
+                </div>
+                <div class="subsection">
+                    <p class="bold">Secondary Research</p>
+                    <p>In addition to the interviews, we also did some secondary research into some sites like Canva, Pixelied, and Stencil, which were providing similar services.</p>
+                </div>
+            </div>
+            <div class="brainstorming">
+                <div class="section-heading">
+                    <img src="./Icons/section icon.svg" alt="section icon">
+                    <p class="section-text">BRAINSTORMING</p>
+                </div>
+                <p>Our initial idea was to create two separate portals for Panda;
+                    <ol>
+                      <li>A portal for Stacks</li>
+                      <li>Another portal for the Design studio team</li>
+                    </ol>
+                </p>
+                <p>
+                    However, during our brainstorming session, we started thinking deeply about how these would work. There were 2 things to consider:
+                </p>
+
+                <div class="subsection">
+                    <p>The first one was;</p>
+                    <div class="block2">
+                        <p>"How can we make sure that all the assets produced by Stacks look consistent (in terms of spacing and layout), and match the Paystack brand?”</p>
+                    </div>
+                    <p>We figured out a solution for this. Instead of letting the Stacks directly edit the template, we thought about showing them a preview of the template, and providing them with a form that they could fill to edit that template. The form provided would depend on the template they wanted to edit, and the text fields would have character limits to ensure that any content added to the template did not mess up the layout.</p>
+                </div>
+
+                <div class="subsection">
+                    <p>The second one was;</p>
+                    <div class="block2">
+                        <p>How exactly will the portal for the design studio team function?”</p>
+                    </div>
+                    <p>While thinking through the answer to this question, we discovered some potential problems with designing a separate portal for the design studio. We already knew that the design studio team made use of advanced applications like Figma in their day-to-day work, so the questions were:</p>
+                    <ul>
+                        <li>Is it a smart idea to ask them to use a tool with much limited functionality to perform tasks that can be performed better on another application?</li>
+                        <li>Can we build something that would replicate some of Figma’s essential features, and even if we can, is it a wise idea to try given that we have just 3 weeks?</li>
+                    </ul>
+                    <p>The answer to both questions was “No”, so we decided to discard the portal for the design studio team. We decided that the templates could already be uploaded by the engineers, and the Stacks could then make use of those templates to generate their assets.</p>
+                </div>
+
+                <div class="subsection">
+                    <p>With Panda, we were trying to achieve this new workflow;</p>
+                    <div class="image">
+                        <img src="./image assets/Panda/Panda workflow.svg" alt="new workflow with Panda the design studio team is removed from the flow, and stacks have direct access to create new assets whenever they need to" width="100%" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="final-outcomes">
+                <div class="section-heading">
+                    <img src="./Icons/section icon.svg" alt="section icon">
+                    <p class="section-text">FINAL OUTCOMES</p>
+                </div>
+
+                <div class="subsection">
+                    <p class="bold">User flow</p>
+                    <p>The first step in the design process was to define the user flow for desktop and mobile.</p>
+                    <div class="image">
+                        <img src="./image assets/Panda/Desktop flow.svg" alt="image showing the user flow on desktop" width="100%" />
+                        <p class="image-label">User flow for desktop</p>
+                    </div>
+                    <div class="image">
+                        <img src="./image assets/Panda/Mobile flow.svg" alt="image showing the user flow on mobile" width="100%" />
+                        <p class="image-label">User flow for mobile</p>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <p class="bold">Low fidelity wireframes</p>
+                    <p>We also worked on the low fidelity wireframes to determine what the basic structure would be. We decided to have a single page design with 3 distinct sections.</p>
+                    <ul>
+                        <li>The first section is the Build section with the form for Stacks to fill. These forms are dynamic, and are generated based on the asset the Stack wants to generate.</li>
+                        <li>The second section is the Preview section. After Stacks have filled a form, they can click on a button and see a preview of their flyer in the top right section.</li>
+                        <li>In the last section, Stacks can see what their flyer would look like across different touch points. (The touch points also differ based on the assets)</li>
+                    </ul>
+                    <div class="image">
+                        <img src="./image assets/Panda/Low fidelity.svg" alt="image showing the low fidelity wireframes created on Miro" width="100%" />
+                        <p class="image-label">Low fidelity wireframes of desktop flow</p>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <p class="bold">High Fidelity wireframes</p>
+                      <ol>
+                        <li>Login</li>
+                          <p>Before using Panda, Stacks have to log in with their Paystack email addresses.</p>
+                          <img src="./image assets/Panda/Login final.svg" alt="welcome screen of Panda" width="100%">
+                        <li>Select asset type</li>
+                            <p>This is the Panda empty state, that shows when no event has been selected yet. To begin, a stack would choose an asset from the asset type dropdown</p>
+                          <img src="./image assets/Panda/Select asset type final.svg" alt="screen for the user to select the tyoe of asset they want to create" width="100%">
+                        <li>Fill dynamic form</li>
+                          <p>After choosing an asset type, a dynamic form is generated and Stacks can fill the input fields with the information they want on their asset. They can also choose from the illustrations provided.</p>
+                          <img src="./image assets/Panda/Fill dynamic form final.svg" alt="form for the users to fill out the information they want their asset to contain" width="100%">
+                        <li>Generate Preview</li>
+                          <p>After filling the form, Stacks can click on the Generate preview button to see how their asset will look across different platforms.</p>
+                          <img src="./image assets/Panda/Generate preview final.svg" alt="screen showing an active generate preview button when a user fills out the form for their asset" width="100%">
+                        <li>Download</li>
+                          <p>Stacks can then download the assets for all platforms or can download for specific platforms.</p>
+                          <img src="./image assets/Panda/Download final.svg" alt="scrren for users to dowload their asset based on the platfrom they want to use it on" width="100%">
+                        <li>Walkthrough</li>
+                          <p>We provided a simple walkthrough for Stacks, to serve as a guide if it was ever needed. This step is triggered by clicking on the help icon at any point during the process.</p>
+                        <li class="video">Loom Video</li>
+                            <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/cdc537cd0cd3459ca4fa3422bbbf621a?sid=46484500-2aa2-4c79-a705-c9e51300e61a&hideEmbedTopBar=true&hide_share=true&hide_title=true&hide_owner=true" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+                      </ol>
+                  </div>
+            </div>
+            
+            <div class="impact">
+                <div class="section-heading">
+                  <img src="./Icons/section icon.svg" alt="section icon">
+                  <p class="section-text">IMPACT</p>
+                </div>
+                <ul>
+                  <li>Paystack now has an assets generator that streamlines the assets creation process and improves employee efficiency.</li>
+                  <li>The productivity of the design studio team has been increased. They no longer have to spend time on repetitive requests, and are now free to take on more challenging tasks.</li>
+                  <li>Stacks can now create flyers as soon as they need them. The asset turn around time has been reduced from >1 day to about 5 minutes.</li>
+                </ul>
+            </div>
+
+            <div class="lessons">
+                <div class="section-heading">
+                  <img src="./Icons/section icon.svg" alt="section icon">
+                  <p class="section-text">LESSONS</p>
+                </div>
+                <ul>
+                    <li>While working on this project, I learnt the importance of clear communication between all the teams involved in building a product. At the start of the project, the design and development teams were not communicating well. This caused confusion and led to us spending 6 weeks By fixing the communication gaps and ensuring full transparency by all parties, we were able to collaborate efficiently to deliver the final product.</li>
+                    <li>Everyone on a team is under a lot of pressure to make a project work. I learnt to understand this, and extend grace when things are not moving the way I want them to, or as fast as I want them to.</li>
+                </ul>
+            </div>
+
+            <div class="section-heading">
+                <p class="section-text">WANT TO SEE MORE?</p>
+            </div>
+
+            <div class="see-more">
+                <img src="./image assets/Panda/Panda final.png" width="40%" alt="image of the next project - Panda"/>
+                <div>
+                  <h1>GoLemon Misfits</h1>
+                  <h4>Designing “Canva for Paystack”</h4>
+                  <div></div>
+                  <p>UX Research. Design.</p>
+                </div>
+            </div>
+          
+        </main>
+
+        <footer>
+            <div id="footer-content">
+                <p>Goziem Ajulibe, 2024</p>
+                <div id="footer-icons">
+                    <img src="./Icons/linkedin.svg" alt="linkedin logo" class="icon">
+                    <img src="./Icons/email.svg" alt="email logo" class="icon">
+                    <img src="./Icons/dribbble.svg" alt="dribbble logo" class="icon">
+                    <img src="./Icons/behance.svg" alt="behance logo" class="icon">
+                    <img src="./Icons/medium.svg" alt="medium logo" class="icon">
+                </div>
+            </div>
+        </footer>
+    </body>
+
+</html>

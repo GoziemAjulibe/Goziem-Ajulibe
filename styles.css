@@ -12,6 +12,7 @@ a{
     font-optical-sizing: auto;
     font-weight: 600;
     font-size: medium;   
+    text-decoration: none;
 }
 
 
@@ -311,6 +312,14 @@ li{
     padding: 1.5em 1em;
 }
 
+.block2{
+    padding: 1.5em 1em;
+    background-color: #CDEBFA;
+    border-left: 4px solid #011b33;
+    margin: 1em 0em;
+    padding: 1.5em 1em;
+}
+
 .goals{
     display: flex;
     flex-direction: column;
@@ -333,7 +342,7 @@ li{
     padding: 1.5em 0em;
 }
 
-.role, .timeline, .brainstorming, .usability-testing, .final-outcomes, .impact, .lessons{
+.role, .timeline, .brainstorming, .usability-testing, .final-outcomes, .impact, .lessons, .research{
     padding-bottom: 3em;
 }
 
@@ -380,6 +389,15 @@ h4{
 
 .hamburger-menu{
     display: none;
+}
+
+.research > .subsection, .final-outcomes > .subsection{
+    padding-top: 0em;
+    padding-bottom: 1.5em;
+}
+
+.video{
+    margin-top: 2em;
 }
 
 
