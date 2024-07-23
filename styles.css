@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
 *{
     margin: 0px;
     padding: 0px;
@@ -5,6 +10,7 @@
 
 body{
     background-color: #F5F0EA;
+    width: 100vw;
 }
 
 a{
@@ -13,6 +19,15 @@ a{
     font-weight: 600;
     font-size: medium;   
     text-decoration: none;
+    cursor: pointer;
+}
+
+a:visited{
+    color: #4E4B66;
+}
+
+a:hover{
+    color: #14142B;
 }
 
 
@@ -35,6 +50,9 @@ header{
     padding: 2em 0em;
     border-bottom: 1px solid #4e4b6638;
     background-color: #F5F0EA;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .hamburger-menu{
@@ -45,7 +63,11 @@ main{
     padding: 0% 12%;
 }
 
-.hero{
+.main-collapsed{
+    width: 60%;
+}
+
+#hero{
     display: flex;
     flex-direction: column;
     padding-bottom: 4em;
@@ -200,6 +222,7 @@ button{
     font-family: "DM Sans", sans-serif;
     font-weight: 300;
     font-size: large;  
+    cursor: pointer;
 }
 
 
@@ -237,11 +260,11 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2em 0em;
+    padding: 2em 12%;
     background-color: #F5F0EA;
     position: sticky;
     top: 0;
-    width: 100%;
+    z-index: 1;
 }
 
 .back{
@@ -252,8 +275,12 @@ footer{
 
 .CTA-text{
     color: #6D0632;
-    font-weight: 700;
-    
+    font-weight: 700; 
+}
+
+.CTA-text2{
+    color: #6D0632;
+    font-weight: 700; 
 }
 
 .page-heading{
@@ -265,6 +292,55 @@ footer{
     color: #6D0632;
     font-weight: 700;
     text-decoration: underline;
+    cursor: pointer;
+}
+
+.guide-container{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    background-color: #F5F0EA;
+    height: 100vh;
+    padding: 2em 2em;
+    width: 20%;
+    box-shadow: -4px 0px 16px 0px #0000000F;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+}
+
+.guide-heading{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.guide-item{
+    border-bottom: 1px solid #00000033;
+    padding-bottom: 24px;
+}
+
+.last-item{
+    border-bottom: none;
+}
+
+.content-guide1, .content-guide2{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.open{
+    display: flex;
+}
+
+.closed{
+    display: none;
+}
+
+.close-icon{
+    cursor: pointer;
 }
 
 .introduction{
@@ -455,6 +531,10 @@ h4{
         background-color: #FFFFFF;
         padding: 2em 4em;
     }
+
+    .guide-container{
+        width: 30%;
+    }
 }
 
 
@@ -495,6 +575,10 @@ h4{
 
     .see-more{
         padding: 1em 2em;
+    }
+
+    .guide-container{
+        width: 30%;
     }
     
 }
@@ -598,18 +682,18 @@ h4{
         display: block;
     }
 
-    .hero-left > .chevron{
+    .hero-left > a{
         display: none;
     }
 
     .hero-right{
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: center;
-    gap: 2em;
-    height: auto;
-    padding-top: 3em;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+        gap: 2em;
+        height: auto;
+        padding-top: 3em;
     }
 
     .horizontal-line{
@@ -624,6 +708,7 @@ h4{
 
     .projects{
         align-items: center;
+        cursor: pointer;
     }
 
     #selected-projects{
@@ -638,7 +723,8 @@ h4{
         align-items: center;
     }
 
-    .CTAs > img{
+
+    .CTAs > .hide {
         display: none;
     }
 
@@ -689,6 +775,10 @@ h4{
     .block{
         padding: 1.5em 1em;
         margin: 1em 0;
+    }
+
+    .guide-container{
+        width: 60%;
     }
 
 }
