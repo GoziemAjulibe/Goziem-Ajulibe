@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 10em;
 }
 
 
@@ -334,7 +335,7 @@ footer{
     border-bottom: none;
 }
 
-.content-guide1, .content-guide2{
+.content-guide{
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -615,6 +616,10 @@ h4{
         padding: 0% 8%;
     }
 
+    .page-nav{
+        padding: 2em 8%;
+    }
+
 
     header{
         border-bottom: none;
@@ -788,6 +793,10 @@ h4{
 
     .guide-container{
         width: 60%;
+    }
+
+    .hide{
+        display: none;
     }
 
 }
