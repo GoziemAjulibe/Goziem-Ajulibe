@@ -19,6 +19,20 @@ document.querySelector(".hamburger-menu").addEventListener("click", function(){
     document.querySelector(".guide-container").classList.add("open");
 })
 
+
+window.addEventListener("scroll", function() {
+    const pageNav = document.querySelector(".page-nav");
+
+    if (window.scrollY > 0) {
+        pageNav.classList.add("scroll-effect");
+    } else {
+        pageNav.classList.remove("scroll-effect");
+    }
+});
+
+
+/*
+
 document.querySelectorAll(".content-guide > a").addEventListener("click", function(){
 
     const vtGuide = document.querySelectorAll(".content-guide > a");
@@ -28,6 +42,5 @@ document.querySelectorAll(".content-guide > a").addEventListener("click", functi
         document.querySelector(".guide-container").classList.add("hide"); 
     }
 })
-
-
-
+    
+*/
