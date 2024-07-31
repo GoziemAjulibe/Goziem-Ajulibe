@@ -31,16 +31,19 @@ window.addEventListener("scroll", function() {
 });
 
 
-/*
+document.addEventListener("DOMContentLoaded", function() {
+    const modal = document.querySelector(".guide-container");
+    const anchors = document.querySelectorAll(".content-guide a");
 
-document.querySelectorAll(".content-guide > a").addEventListener("click", function(){
+    anchors.forEach(anchor => {
+        anchor.addEventListener("click", function() {
+            if (window.innerWidth <= 600) {
+                modal.classList.remove("open");
+                modal.classList.add("closed");
+            }
+        });
+    });
+});
 
-    const vtGuide = document.querySelectorAll(".content-guide > a");
 
-    for (i=0; i<vtGuide.length; i++){
-        document.querySelector(".guide-container").classList.remove("open");
-        document.querySelector(".guide-container").classList.add("hide"); 
-    }
-})
-    
-*/
+
