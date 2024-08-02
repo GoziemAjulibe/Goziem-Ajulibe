@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoLemon Misfits</title>
+    <link href="./styles.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    </head>
+
+
+    <body>
+
+        <div class="page-nav">
+            <a href="./index.html">
+                <div class="back">
+                  <img src="./Icons/chevron-left.png" alt="back arrow" width="30%">
+                  <p class="CTA-text">Back</p>
+                </div>
+            </a>
+
+            <p class="page-heading">GoLemon Misfits</p>
+
+            <div class="guide">
+                <p class="CTA-text">Content Guide</p>
+                <img src="./Icons/hamburger menu.svg" alt="hamburger-menu" width="15%">
+            </div>
+        </div>
+
+
+        <main>
+
+            <div class="introduction">
+                <p>GoLemon Misfits is a feature that sells imperfect products to customers at discounted prices, and with clear context about the product's defect.</p>
+          
+                <img src="./image assets/GoLemon/Misfits header.svg" alt="an image showing the misfits section on the GoLemon app" width="100%"/>
+            </div>
+
+            <div class="section-heading">
+                <img src="./Icons/section icon.svg" alt="section icon">
+                <p class="section-text">THE PROBLEM</p>
+            </div>
+            
+          
+            <div class="the-problem" id="GM-problem">
+                <p>At GoLemon, one of the stages in the order fulfilment process is quality assurance. At this stage, QA specialists go through orders to ensure that all products meet the QA standards for appearance and safety. Products that fall short are usually flagged and replaced before an order is sent out.</p>
+
+                <p>In a lot of cases, products sent back at this stage were usually not bad or unfit for use, but have some defects such as dents, rust, torn packaging or close best-by dates, rendering them unfit for sale to customers. Some of these products were eventually bought by staff, while the majority ended up being disposed.</p>
+
+                <p>This meant that almost everyday, the business lost some money due to items like this. Over time, these losses were adding up to become significant.</p>
+                
+            </div>
+
+            <div class="section-heading">
+                <img src="./Icons/section icon.svg" alt="section icon">
+                <p class="section-text">HYPOTHESIS</p>
+              </div>
+
+            <div class="hypothesis" id="GM-hypothesis">
+                <p>Our assumption was that if we could display these products on the app, some users would not mind buying them, as long as; </p>
+                <ul>
+                    <li>We provided very clear context regarding the product's defect.</li>
+                    <li>We sold them at discounted prices.</li>
+                </ul>
+                <p>To do this, we introduced a new product category called GoLemon Misfits, a place where users could shop imperfect products across all our product categories, from fresh food to toiletries and cosmetics.</p>
+            </div>
+
+            <div class="section-heading">
+                <img src="./Icons/section icon.svg" alt="section icon">
+                <p class="section-text">GOALS</p>
+              </div>
+
+            <div class="goals" id="GM-goals">
+                <p>There were 2 major goals we were trying to achieve with Misfits;</p>
+                <ul>
+                    <li>Give users an opportunity to shop smartly</li>
+                    <li>Help the business reduce waste and loss.</li>
+                </ul>
+            </div>
+          
+            <div class="role" id="GM-role">
+                <div class="section-heading">
+                    <img src="./Icons/section icon.svg" alt="section icon">
+                    <p class="section-text">ROLE</p>
+                </div>
+                <p>I worked with a product manager and an engineering team across ideation, design, grooming, and QA testing.</p>
+            </div>
+
+            
+            <div class="final-outcomes" id="GM-outcome">
+                <div class="section-heading">
+                    <img src="./Icons/section icon.svg" alt="section icon">
+                    <p class="section-text">FINAL OUTCOMES</p>
+                </div>
+
+                <div class="subsection">
+                    <p class="bold">Misfit label</p>
+                    <p>We arranged the common product defects into high level groups to form tags. The point of this was that at first glance, users would be able to tell the broad reason why a product was a misfit. </p>
+                    <div class="image">
+                        <img src="./image assets/GoLemon/Different misfit labels.svg" alt="image showing the different misfit labels" width="100%" />
+                        <p class="image-label">Different misfit labels</p>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <p class="bold">Detailed explanation of reason for defect</p>
+                    <p>While each defect was part of a larger group, it was still important to describe a particular product’s defect in more detail. To do this, we added a banner to the product detail page to provide more context about a defect.</p>
+                    <div class="image">
+                        <img src="./image assets/GoLemon/Detailed explanation of a product’s defect.svg" alt="image showing the detailed explanation of a product's defect" width="100%" />
+                        <p class="image-label">Detailed explanation of a product's defect</p>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <p class="bold">Product discount flag</p>
+                    <p>We added discount flags to visually communicate the discount as a price slash and also as a percentage</p>
+                    <div class="image">
+                        <img src="./image assets/GoLemon/Price slash and percent discount.svg" alt="image showing the price slash and percent discount" width="100%" />
+                        <p class="image-label">Price slash and percent discount</p>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <p class="bold">Product reservation feature and notifications</p>
+                    <p>Misfit products were usually limited in quantity, and we needed to handle scenarios where multiple people were trying to buy the same items at the same time. To prevent users from adding items to their carts and then being told that it’s no longer available at the point where they were about to pay, we decided to introduce the concept of reservation.</p>
+
+                    <ol>
+                        <li>Communicating the reservation</li>
+                          <p>We added text to each product modal notifying users that items would only be reserved for them for 30 minutes</p>
+                        <li>The payment countdown</li>
+                            <p>We repurposed the “deal expiry” countdown to communicate the amount of time a user had left to pay for a product.</p>
+                        <li>Showing users an item has been fully reserved</li>
+                          <p>We decided not to remove items that had been fully reserved from the product listing page, to accommodate instances where a user did not eventually pay for an item that they reserved. Instead, we communicated that the item had been reserved, and gave users an option to subscribe for notifications if the product became available again.</p>
+                        <li>Notifying users when they have 5 minutes left to pay</li>
+                          <p>We didn’t want to give users the mental load of keeping track of the time they had left to pay, and we also didn’t want to send too many notifications. As a middle ground, we sent one notification when they had ~5 minutes left to pay giving them time to checkout their item before it was removed from their order.</p>
+                    </ol>
+
+                    <div class="image">
+                        <img src="./image assets/GoLemon/Product reservation and notifications.svg" alt="image showing product reservations and notifications" width="100%" />
+                        <p class="image-label">Product reservation and notifications</p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="impact" id="GM-impact">
+                <div class="section-heading">
+                  <img src="./Icons/section icon.svg" alt="section icon">
+                  <p class="section-text">IMPACT</p>
+                </div>
+                <p>
+                    All misfit items listed on the app sell out within a week. This has helped to reduce business wastage and loss by over 80%. 
+                </p>
+            </div>
+
+
+
+            <div class="section-heading">
+                <p class="section-text">WANT TO SEE MORE?</p>
+            </div>
+
+            <a href="./Virtual-terminals.html">
+                <div class="see-more">
+                    <img src="./image assets/VT/VT - Final.png" width="40%" alt="image of the next project - Virtual Terminals"/>
+                    <div>
+                    <h1>Virtual Terminals</h1>
+                    <h4>Enhancing the in-person payment experience</h4>
+                    <div></div>
+                    <p>Design. Usability Testing</p>
+                    </div>
+                </div>
+            </a>
+
+            <div class="guide-container closed">
+                <div class="guide-heading">
+                  <p class="CTA-text2">Content guide</p>
+                  <img class="close-icon" src="./Icons/x.svg">
+                </div>
+                <div class="content-guide">
+                    <a href="#GM-problem"><div class="guide-item"><p>The Problem</p></div></a>
+                    <a href="#GM-hypothesis"><div class="guide-item"><p>Hypothesis</p></div></a>
+                    <a href="#GM-goals"><div class="guide-item"><p>Goals</p></div></a>
+                    <a href="#GM-role"><div class="guide-item"><p>Role</p></div></a>
+                    <a href="#GM-outcome"><div class="guide-item"><p>Final Outcomes</p></div></a>
+                    <a href="#GM-impact"><div class="guide-item"><p>Impact</p></div></a>
+                </div>
+            </div>
+
+            </main>
+
+            <footer>
+                <div id="footer-content">
+                    <p>Goziem Ajulibe, 2024</p>
+                    <div id="footer-icons">
+                        <a href="https://www.linkedin.com/in/goziem-ajulibe" class="icon"><img src="./Icons/linkedin.svg" alt="linkedin logo" ></a>
+                        <a href="mailto:goziemajulibe@gmail.com" class="icon"><img src="./Icons/email.svg" alt="email logo" ></a>
+                        <a href="https://dribbble.com/Goziem" class="icon"><img src="./Icons/dribbble.svg" alt="dribbble logo" ></a>
+                        <a href="https://www.behance.net/goziem" class="icon"><img src="./Icons/behance.svg" alt="behance logo" ></a>
+                        <a href="https://medium.com/@goziem-ajulibe" class="icon"><img src="./Icons/medium.svg" alt="medium logo" ></a>
+                    </div>
+                </div>
+              </footer>
+
+        <script src="./script.js"></script>
+
+    </body>
+
+</html>
