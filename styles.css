@@ -183,6 +183,8 @@ h2{
     flex-direction: column;
     gap: 1em;
     margin-bottom: 3em;
+    position: relative;
+    overflow: hidden;
 }
 
 
@@ -242,6 +244,7 @@ footer{
 }
 
 #footer-content{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -251,6 +254,7 @@ footer{
 
 #footer-icons{
     display: flex;
+    justify-content: center;
     gap: 1em;
 }
 
@@ -504,19 +508,56 @@ h4{
     padding-bottom: 1em;
 }
 
+.project-hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1em;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; 
+    padding: 2em;
+    text-align: center;
+    box-sizing: border-box;
+    pointer-events: none; 
+}
 
+.projects:hover .project-hover {
+    opacity: 1;
+    pointer-events: auto; 
+}
 
+.hover-h1{
+    color: #FFFFFF;
+    text-align: left;
+}
 
+.hover-h4{
+    color: #FCFCFC;
+    font-weight: 300;
+    text-align: left;
+}
 
+.hover-p{
+    color: #C7C7CC;
+    text-align: left;
+}
 
+.divider{
+    border: 1px solid rgba(252, 252, 252, 0.60);
+    width: 100%;
+}
 
-
-
-
-
-
-
-
+.centered{
+    align-items: center;
+}
 
 
 
@@ -537,7 +578,7 @@ h4{
     h1,h2{
         font-family: "DM Sans", sans-serif;
         font-weight: bold;
-        font-size: 2em;
+        font-size: 1.5em;
         line-height: 150%;
         letter-spacing: 0.02em;
         color: #14142B;
@@ -587,7 +628,7 @@ h4{
     h1,h2{
         font-family: "DM Sans", sans-serif;
         font-weight: bold;
-        font-size: 1.5em;
+        font-size: 1.2em;
         line-height: 150%;
         letter-spacing: 0.02em;
         color: #14142B;
