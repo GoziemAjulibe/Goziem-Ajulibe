@@ -14,6 +14,7 @@ document.querySelector(".close-icon").addEventListener("click", function(){
     document.querySelector("footer").classList.remove("main-collapsed");
 })
 
+
 document.querySelector(".hamburger-menu").addEventListener("click", function(){
     document.querySelector(".guide-container").classList.remove("closed");
     document.querySelector(".guide-container").classList.add("open");
@@ -31,19 +32,11 @@ window.addEventListener("scroll", function() {
 });
 
 
-document.addEventListener("DOMContentLoaded", function() {
-    const modal = document.querySelector(".guide-container");
-    const anchors = document.querySelectorAll(".content-guide a");
 
-    anchors.forEach(anchor => {
-        anchor.addEventListener("click", function() {
-            if (window.innerWidth <= 600) {
-                modal.classList.remove("open");
-                modal.classList.add("closed");
-            }
-        });
-    });
-});
+document.querySelectorAll(".guide-item")[0].addEventListener("click", function(){
+    document.querySelector(".guide-container").style.display = "none";
+})
+
 
 
 
