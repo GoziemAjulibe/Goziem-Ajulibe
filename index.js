@@ -3,12 +3,14 @@
 document.querySelector(".hamburger-menu").addEventListener("click", function(){
     document.querySelector(".guide-container").classList.remove("closed");
     document.querySelector(".guide-container").classList.add("open");
+    document.body.style.overflow = "hidden";
 })
 
 
 document.querySelector(".close-icon").addEventListener("click", function(){
     document.querySelector(".guide-container").classList.remove("open");
     document.querySelector(".guide-container").classList.add("closed");
+    document.body.style.overflow = "";
 })
 
 
@@ -17,6 +19,7 @@ function closeGuideContainer() {
     if (guideContainer) {
         guideContainer.classList.remove("open");
         guideContainer.classList.add("closed");
+        document.body.style.overflow = "";
     }
  }
     

@@ -368,6 +368,8 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 24px;
+    overflow-y: auto;
+    padding-bottom: 6em;
 }
 
 .open{

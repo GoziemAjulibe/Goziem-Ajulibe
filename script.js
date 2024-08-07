@@ -4,6 +4,7 @@ function openGuideContainer() {
     if (guideContainer) {
       guideContainer.classList.remove("closed");
       guideContainer.classList.add("open");
+      document.body.style.overflow = "hidden";
     }
 }
   
@@ -13,6 +14,7 @@ const guideContainer = document.querySelector(".guide-container");
 if (guideContainer) {
     guideContainer.classList.remove("open");
     guideContainer.classList.add("closed");
+    document.body.style.overflow = "";
 }
 }
 
