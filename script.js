@@ -1,24 +1,85 @@
 
+function openGuideContainer() {
+    const guideContainer = document.querySelector(".guide-container");
+    if (guideContainer) {
+      guideContainer.classList.remove("closed");
+      guideContainer.classList.add("open");
+    }
+}
+  
+  
+function closeGuideContainer() {
+const guideContainer = document.querySelector(".guide-container");
+if (guideContainer) {
+    guideContainer.classList.remove("open");
+    guideContainer.classList.add("closed");
+}
+}
 
-document.querySelector(".guide").addEventListener("click", function(){
-    document.querySelector(".guide-container").classList.remove("closed");
-    document.querySelector(".guide-container").classList.add("open");
-    document.querySelector("main").classList.add("main-collapsed");
-    document.querySelector("footer").classList.add("main-collapsed");
-})
 
-document.querySelector(".close-icon").addEventListener("click", function(){
-    document.querySelector(".guide-container").classList.remove("open");
-    document.querySelector(".guide-container").classList.add("closed");
-    document.querySelector("main").classList.remove("main-collapsed");
-    document.querySelector("footer").classList.remove("main-collapsed");
-})
+function handleGuideContainer() {
+    const guideContainer = document.querySelector(".guide-container");
+    const hamburgerMenu = document.querySelector(".hamburger-menu");
+    const guide = document.querySelector(".guide");
+    const closeIcon = document.querySelector(".close-icon");
+    const guideItems = document.querySelectorAll(".guide-item");
+  
+    if (window.matchMedia('(max-width: 890px)').matches) {
+     
+      if (guide) {
+        guide.addEventListener("click", function() {
+          openGuideContainer();
+          document.querySelector("body").classList.remove("body-normal");
+          document.querySelector("body").classList.add("body-collapsed");
+          document.querySelector("footer").classList.add("footer-collapsed");
+        });
+      }
+  
+      if (closeIcon) {
+        closeIcon.addEventListener("click", function() {
+          closeGuideContainer();
+          document.querySelector("body").classList.remove("body-collapsed");
+          document.querySelector("footer").classList.remove("footer-collapsed");
+          document.querySelector("body").classList.add("body-normal");
+        });
+      }
+  
+      if (hamburgerMenu) {
+        hamburgerMenu.addEventListener("click", function() {
+          openGuideContainer();
+        });
+      }
+  
+      guideItems.forEach(item => {
+        item.addEventListener("click", function() {
+          closeGuideContainer();
+        });
+
+      });
+
+    } else {
+        document.querySelector(".guide").addEventListener("click", function(){
+            openGuideContainer();
+            document.querySelector("body").classList.remove("body-normal");
+            document.querySelector("body").classList.add("body-collapsed");
+            document.querySelector("footer").classList.add("footer-collapsed");
+        })
+
+        document.querySelector(".close-icon").addEventListener("click", function(){
+            closeGuideContainer();
+            document.querySelector("body").classList.remove("body-collapsed");
+            document.querySelector("footer").classList.remove("footer-collapsed");
+            document.querySelector("body").classList.add("body-normal");
+        })
+    }
+
+}
 
 
-document.querySelector(".hamburger-menu").addEventListener("click", function(){
-    document.querySelector(".guide-container").classList.remove("closed");
-    document.querySelector(".guide-container").classList.add("open");
-})
+handleGuideContainer();
+  
+
+window.addEventListener('resize', handleGuideContainer);
 
 
 window.addEventListener("scroll", function() {
@@ -33,9 +94,6 @@ window.addEventListener("scroll", function() {
 
 
 
-document.querySelectorAll(".guide-item")[0].addEventListener("click", function(){
-    document.querySelector(".guide-container").style.display = "none";
-})
 
 
 

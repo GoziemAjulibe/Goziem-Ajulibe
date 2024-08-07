@@ -12,7 +12,18 @@ html {
 body{
     background-color: #F5F0EA;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
 }
+
+.body-normal{
+    align-items: center;
+}
+
+.body-collapsed{
+    align-items: left;
+}
+
 
 a{
     font-family: "DM Sans", sans-serif;
@@ -45,6 +56,8 @@ a:hover{
 }
 
 header{
+    width: 100vw;
+    box-sizing: border-box;
     display: flex;
     gap: 3em;
     justify-content: space-between;
@@ -62,9 +75,10 @@ header{
 
 main{
     padding: 0% 12%;
+
 }
 
-.main-collapsed{
+.case-studies {
     width: 60%;
 }
 
@@ -240,7 +254,13 @@ button:hover{
 }
 
 footer{
-    padding: 2% 12%;  
+    padding: 2% 12%; 
+    width: 100vw; 
+    box-sizing: border-box;
+}
+
+.footer-collapsed{
+    width: 84%;
 }
 
 #footer-content{
@@ -266,6 +286,7 @@ footer{
 
 
 .page-nav{
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -274,6 +295,7 @@ footer{
     position: sticky;
     top: 0;
     z-index: 1;
+    box-sizing: border-box;
 }
 
 .back {
@@ -604,6 +626,15 @@ h4{
     .guide-container{
         width: 30%;
     }
+
+    .case-studies {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .footer-collapsed{
+        width: 100%;
+    }
 }
 
 
@@ -650,7 +681,15 @@ h4{
         width: 30%;
     }
 
-    
+    .case-studies {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .footer-collapsed{
+        width: 100%;
+    }
+
     
 }
 
@@ -863,6 +902,15 @@ h4{
 
     .hide{
         display: none;
+    }
+
+    .case-studies {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .footer-collapsed{
+        width: 100%;
     }
 
 }
