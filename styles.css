@@ -24,6 +24,10 @@ body{
     align-items: left;
 }
 
+.hyperlink{
+    text-decoration: underline;
+}
+
 
 a{
     font-family: "DM Sans", sans-serif;
