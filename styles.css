@@ -24,9 +24,6 @@ body{
     align-items: left;
 }
 
-.hyperlink{
-    text-decoration: underline;
-}
 
 
 a{
@@ -47,6 +44,9 @@ a:hover{
     color: #40031D;
 }
 
+.hyperlink{
+    text-decoration: underline;
+}
 
 .nav-content{
     font-family: "DM Sans", sans-serif;
