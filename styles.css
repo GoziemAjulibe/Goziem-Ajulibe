@@ -463,13 +463,20 @@ li{
     padding: 1.5em 0em;
 }
 
-.role, .timeline, .brainstorming, .usability-testing, .final-outcomes, .impact, .lessons, .research, .hypothesis{
-    padding-bottom: 3em;
+.problem, .role, .goals, .objective, .timeline, .brainstorming, .usability-testing, .final-outcomes, .impact, .lessons, .research, .hypothesis{
+    padding-bottom: 5em;
+    margin-top: 3em;
 }
 
 .usability-testing > .subsection{
     padding-top: 0em;
 }
+
+.components{
+    padding-top: 6em;
+    padding-bottom: 3em;
+}
+
 
 
 ol, ul{
