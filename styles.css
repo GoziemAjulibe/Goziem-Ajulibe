@@ -644,6 +644,17 @@ input, select, textarea {
     display: none;
 }
 
+.submit-button {
+    display: none; 
+    background-color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
 
 
 
@@ -712,6 +723,14 @@ input, select, textarea {
 
     #error-message {
         font-size: 14px;
+    }
+
+    #submitButton {
+        display: none; 
+    }
+    
+    .submit-button {
+        display: inline-block;
     }
 }
 
@@ -783,6 +802,14 @@ input, select, textarea {
 
     #error-message {
         font-size: 12px;
+    }
+
+    #submitButton {
+        display: none; 
+    }
+    
+    .submit-button {
+        display: inline-block;
     }
     
 }
@@ -1005,6 +1032,14 @@ input, select, textarea {
 
     .footer-collapsed{
         width: 100%;
+    }
+
+    #submitButton {
+        display: none; 
+    }
+    
+    .submit-button {
+        display: inline-block;
     }
 
 }
