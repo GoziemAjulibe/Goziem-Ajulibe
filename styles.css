@@ -600,6 +600,49 @@ h4{
 }
 
 
+.input {
+    border: 1px solid #FFFFFF;
+    border-radius: 12px;
+    padding: 36px 48px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+input::placeholder {
+    color: #FFFFFF;
+}
+
+input:focus {
+    outline: none;
+    color: #FFFFFF;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+input, select, textarea {
+    color: #FFFFFF;
+}
+
+.default {
+    border: none;
+    background-color: transparent;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+#error-message {
+    font-size: 16px;
+    color: #FF0000;
+    text-align: center;
+    margin-top: 10px;
+    display: none;
+}
 
 
 
@@ -652,6 +695,23 @@ h4{
 
     .footer-collapsed{
         width: 100%;
+    }
+
+    .input {
+        padding: 20px 24px; 
+        width: 90%;
+    }
+
+    input {
+        font-size: 16px;
+    }
+
+    .default {
+        font-size: 16px; 
+    }
+
+    #error-message {
+        font-size: 14px;
     }
 }
 
@@ -708,6 +768,22 @@ h4{
         width: 100%;
     }
 
+    .input {
+        padding: 16px 20px;
+        width: 100%;
+    }
+
+    input {
+        font-size: 14px
+    }
+
+    .default {
+        font-size: 14px;
+    }
+
+    #error-message {
+        font-size: 12px;
+    }
     
 }
 

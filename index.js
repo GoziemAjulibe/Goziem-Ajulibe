@@ -51,3 +51,27 @@ window.addEventListener("scroll", function() {
 });
 
 
+document.getElementById("submitButton").addEventListener("click", function () {
+    handlePasswordInput();
+});
+
+document.getElementById("passwordInput").addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+        handlePasswordInput();
+    }
+});
+
+
+function handlePasswordInput() {
+    var passwordInput = document.getElementById("passwordInput").value;
+    var message = document.getElementById("message");
+
+    var correctPassword = "bilbobaggins";
+
+    if (passwordInput.toLowerCase() === correctPassword) {
+        window.location.href = "limelight.html";
+    } else {
+        message.style.visibility = "visible";
+    }
+}
+
