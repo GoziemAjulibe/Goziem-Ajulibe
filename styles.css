@@ -205,6 +205,10 @@ h2{
     overflow: hidden;
 }
 
+.midtext{
+    margin-top: 3em;
+}
+
 
 .section-right{
     position: relative;
@@ -464,7 +468,7 @@ li{
     padding: 1.5em 0em;
 }
 
-.problem, .role, .goals, .objective, .timeline, .brainstorming, .usability-testing, .final-outcomes, .impact, .lessons, .research, .hypothesis{
+.problem, .role, .goals, .objective, .timeline, .brainstorming, .usability-testing, .final-outcomes, .impact, .lessons, .research, .hypothesis, .constraints{
     padding-bottom: 5em;
     margin-top: 3em;
 }
