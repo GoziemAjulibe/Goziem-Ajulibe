@@ -464,6 +464,10 @@ li{
     margin-top: 6em;
 }
 
+.space{
+    padding-top: 5em;
+}
+
 .image-label{
     font-size:small;
 }
