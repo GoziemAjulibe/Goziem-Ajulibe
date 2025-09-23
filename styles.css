@@ -397,18 +397,78 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 1.5em;
-    padding: 2em 0em;
+    padding: 1em 0em;
+}
+
+.summary{
+    display: flex;
+    flex-direction: row;
+    gap: 12em;
+}
+
+.space-above{
+    padding-top: 1.5em;
+}
+
+.group{
+    padding-bottom: 3em;
+}
+
+.features{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 6em;
+}
+
+.text{
+    flex: 2.8;
+}
+
+.feature-image{
+    flex: 1.2;
+
+}
+
+.img-group{
+    padding-top: 6em;
+}
+
+.green{
+  color: #51946E;  
+  padding-bottom: 0.5em;
+}
+
+.red{
+    color: #C9554A;
+    padding-bottom: 0.5em;
+}
+
+.grey{
+    padding-bottom: 0.5em;
 }
 
 .section-heading{
     display: flex;
     gap: 0.5em;
-    padding: 1.5em 0em;
+    padding-top: 2em;
+    padding-bottom: 0.5em;
+}
+
+.callout{
+    padding-left: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #D9FFCC;
+    border: 1px solid #02623A;
+    border-left: 4px solid #02623A;
+    margin-bottom: 1em;
+    margin-top: 3em;
 }
 
 .section-text{
     color: #14142B;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .the-problem{
@@ -476,10 +536,15 @@ li{
     padding: 1.5em 0em;
 }
 
-.problem, .role, .goals, .objective, .timeline, .brainstorming, .usability-testing, .final-outcomes, .impact, .lessons, .research, .hypothesis, .constraints{
+.problem, .tools, .role, .goals, .objective, .timeline, .brainstorming, .usability-testing, .final-outcomes, .impact, .lessons, .research, .hypothesis, .constraints{
     padding-bottom: 5em;
-    margin-top: 3em;
+    margin-top: 1em;
 }
+
+.img-red {
+    padding-bottom: 5em;
+}
+
 
 .usability-testing > .subsection{
     padding-top: 0em;
@@ -609,7 +674,7 @@ h4{
 }
 
 .introduction > p{
-    padding-bottom: 3em;
+    padding-bottom: 0.5em;
 }
 
 
