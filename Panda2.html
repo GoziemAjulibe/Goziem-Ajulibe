@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limelight</title>
+    <link href="./styles.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./image assets/favicon.png">
+    </head>
+
+
+    <body class="body-normal">
+
+        <div class="page-nav">
+            <a href="./index.html">
+                <div class="back">
+                  <img src="./Icons/chevron-left.png" alt="back arrow" width="30%">
+                  <p class="CTA-text">Back</p>
+                </div>
+            </a>
+
+            <p class="page-heading">Panda</p>
+
+            <div class="guide">
+                <p class="CTA-text">Content Guide</p>
+                <img src="./Icons/hamburger menu.svg" alt="hamburger-menu" width="15%">
+            </div>
+        </div>
+
+        <main class="case-studies">
+
+            <div class="introduction">
+                <img src="./image assets/Panda/Panda header.png" alt="an image showing the mobile and web versions of Panda" width="100%"/>
+                
+                
+            </div>
+
+            <div class="summary">
+                <div class="role" id="PD-role">
+                    <div class="section-heading">
+                        <p class="section-text">ROLE</p>
+                    </div>
+                    <p>User research, UI design</p>
+                </div>
+
+
+                <div class="constraints" id="PD-constraints">
+                    <div class="section-heading">
+                        <p class="section-text">TIMELINE</p>
+                    </div>
+                    <p>6 weeks (April 2023)</p>
+                </div>
+
+                <div class="tools" id="PD-tools">
+                    <div class="section-heading">
+                        <p class="section-text">TOOLS</p>
+                    </div>
+                    <p>Figma, Miro, Figjam</p>
+                </div>
+            </div>
+
+
+
+            <div class="section-heading" id="PD-overview">
+                <p class="section-text">OVERVIEW</p>
+            </div>
+            
+          
+            <div class="the-problem" id="PD-problem">
+                <p>In a 6 week project, I collaborated with another designer and a team of engineers to create Panda, an asset generator designed to streamline processes, improve efficiency, and reduce turnaround times for internal teams within Paystack. This project involved involved conducting research, defining user flows and process maps, and designing the wireframes and high fidelity prototypes for Panda.</p>
+            </div>
+
+            <div class="objective" id="PD-context">
+                <div class="section-heading">
+                    <p class="section-text">CONTEXT</p>
+                </div>
+                <p>At Paystack (a payment service provider), the design studio team was responsible for creating a variety of graphic assets for internal use—social media posts, product launch announcements, certificates, Zoom backgrounds, and more. </p>
+                <p class="space-above">With time the volume of asset requests increased, causing the following challenges.</p>
+                <div class="img-group">
+                    <img src="./image assets/Panda 2.0/Problems.png" alt="an image showing the challenges that led to Panda" width="100%"/>
+                </div>
+                
+            </div>
+
+
+
+            <div  class="goals" id="PD-research">
+                <div class="section-heading">
+                    <p class="section-text">UNDERSTANDING THE PROBLEM THROUGH RESEARCH</p>
+                </div>
+
+                <div>
+                    <p>To begin, we spoke with the design studio team, and with representatives of the different internal teams that typically requested assets.</p>
+                     <p class="space-above">The aim of the research was to properly understand the challenges the design studio team had been facing, and to have a better understanding of what the current asset request process looked like.</p>
+                </div>
+
+                <div>
+                    <img src="./image assets/Panda 2.0/Research methods.png" alt="an image showing the research methods and questions" width="100%" class="img-red space-above"/>
+                    <p class="space-above bold red">From our stakeholder interviews we were able to map out the current asset request process; </p>
+                </div>
+
+                <div class="features">
+                    <img src="./image assets/Panda/Scenario 1.png" alt="image showing one of the scenarios while requesting for an asset" width="50%" class="img-red space-above"/>
+                    <img src="./image assets/Panda/Scenario 2.png" alt="image showing the scenario when detials changed after the asset had been created by the design studio team" width="50%" class="img-red space-above"/>
+                </div>
+
+                <div>
+                    <p class="space-above bold green">And define the ideal process; </p>
+                    <img src="./image assets/Panda/Panda workflow.png" alt="ew workflow with Panda the design studio team is removed from the flow, and stacks have direct access to create new assets whenever they need to" width="100%" class="img-red space-above"/>
+                </div>
+
+                <div class="block2">
+                        <p>In addition to the interviews, we also did some secondary research into some sites like Canva, Pixelied, and Stencil, which were providing similar services.</p>
+                </div>
+
+            </div>
+
+            <div>
+                <div class="section-heading" id="PD-process">
+                    <p class="section-text">BRAINSTORMING & USER FLOWS</p>
+                </div>
+                <p>Our first idea was to create two separate portals — one for Stacks (non-designers within Paystack) and another for the design studio team. However, we soon realized that managing two separate systems would add unnecessary complexity.
+
+                There was one major thing to consider;</p>
+                <p class="space-above bold">"How can we make sure that all the assets produced by Stacks look consistent (in terms of spacing and layout), and match the Paystack brand?”</p>
+                <p class="space-above">We figured out a solution for this. Instead of letting the Stacks directly edit the template, we thought about showing them a preview of the template, and providing them with a form that they could fill to edit that template. The form provided would depend on the template they wanted to edit, and the text fields would have character limits to ensure that any content added to the template did not mess up the layout.</p>
+
+                <p class="space-above">With this in mind, we worked on the user flows for desktop and mobile.</p>
+
+                <div>
+                    <div class="image">
+                            <img src="./image assets/Panda/Desktop user flow.png" alt="image showing the user flow on desktop" width="100%" />
+                            <p class="image-label">User flow for desktop</p>
+                    </div>
+                    <div class="image">
+                            <img src="./image assets/Panda/Mobile user flow.png" alt="image showing the user flow on mobile" width="100%" />
+                            <p class="image-label img-red">User flow for mobile</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="section-heading" id="PD-sketches">
+                    <p class="section-text">LOW FIDELITY WIREFRAMES</p>
+                </div>
+                <p>We worked on the low fidelity wireframes to determine what the basic structure would be. We decided to have a single page design with 3 distinct sections. </p>
+                <ul class="space-above">
+                        <li>The first section is the Build section with the form for Stacks to fill. These forms are dynamic, and are generated based on the asset the Stack wants to generate.</li>
+                        <li>The second section is the Preview section. After Stacks have filled a form, they can click on a button and see a preview of their flyer in the top right section.</li>
+                        <li>In the last section, Stacks can see what their flyer would look like across different touch points. (The touch points also differ based on the assets)</li>
+                    </ul>
+                <div class="image">
+                        <img src="./image assets/Panda/Desktop flow low fidelity.png" alt="image showing the ow fidelity wireframes created on Miro" width="100%" />
+                        <p class="image-label img-red">Low fidelity wireframes of desktop flow</p>
+                </div>
+            </div>
+            
+
+            
+            <div class="final-outcomes" id="PD-design">
+                <div class="section-heading">
+                    <p class="section-text">SOLUTION & FINAL DESIGN FLOW</p>
+                </div>
+
+                <div>
+                    <p class="bold space-above green">Step 1: Log in </p>
+                    <p>Before using Panda, Stacks have to log in with their Paystack email addresses.</p>
+
+                    <div class="image">
+                        <img src="./image assets/Panda/Login high fi.png" alt="welcome screen of Panda" width="100%" />
+                        <p class="image-label img-red">Log in screen</p>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="bold space-above green">Step 2: Select asset type</p>
+                    <p>This is the Panda empty state, that shows when no event has been selected yet. To begin, a stack would choose an asset from the asset type dropdown.</p>
+
+                    <div class="image">
+                        <img src="./image assets/Panda/Select asset type final.png" alt="screen for the user to select the tyoe of asset they want to create" width="100%" />
+                        <p class="image-label img-red">Panda empty state</p>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="bold space-above green">Step 3: Fill dynamic form</p>
+                    <p>After choosing an asset type, a dynamic form is generated and Stacks can fill the input fields with the information they want on their asset. They can also choose from the illustrations provided.</p>
+
+                    <div class="image">
+                        <img src="./image assets/Panda/Fill dynamic form final.png" alt="form for the users to fill out the information they want their asset to contain" width="100%" />
+                        <p class="image-label img-red">Dynamic form for each asset</p>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="bold space-above green">Step 4: Generate Preview</p>
+                    <p>After filling the form, Stacks can click on the Generate preview button to see how their asset will look across different platforms.</p>
+
+                    <div class="image">
+                        <img src="./image assets/Panda/Generate preview final.png" alt="form for the users to fill out the information they want their asset to contain" width="100%" />
+                        <p class="image-label img-red">Active generate preview button</p>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="bold space-above green">Step 5: Download</p>
+                    <p>Stacks can then download the assets for all platforms or can download for specific platforms.</p>
+
+                    <div class="image">
+                        <img src="./image assets/Panda/Download final.png" alt="scrren for users to dowload their asset based on the platfrom they want to use it on" width="100%" />
+                        <p class="image-label img-red">Download button with different download options</p>
+                    </div>
+                </div>
+
+
+
+                <div class="img-red">
+                    <div class="section-heading" id="PD-testing">
+                        <p class="section-text">LOOM VIDEO OF THE FINAL PRODUCT </p>
+                    </div>
+                    <div  style="position: relative; padding-bottom: 56.25%; height: 0;">
+                        <iframe src="https://www.loom.com/embed/cdc537cd0cd3459ca4fa3422bbbf621a?sid=46484500-2aa2-4c79-a705-c9e51300e61a&hideEmbedTopBar=true&hide_share=true&hide_title=true&hide_owner=true" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+                    </div>
+                </div>
+
+                <div class="space-above">
+                    <div class="section-heading" id="PD-impact">
+                        <p class="section-text">IMPACT</p>
+                    </div>
+                    <div class="image">
+                        <img src="./image assets/Panda 2.0/Impact.png" alt="image showing The impact of Panda" width="100%" class="img-red"/>
+                    </div>
+                </div> 
+
+
+            <div class="section-heading">
+                <p class="section-text">CHECK OUT MY NEXT PROJECT</p>
+            </div>
+
+            <a href="./misfits.html">
+                <div class="see-more">
+                    <img src="./image assets/GoLemon/Misfits final.png" width="40%" alt="image of the next project - GoLemon Misfits"/>
+                    <div>
+                    <h1>GoLemon Misfits</h1>
+                    <h4>Reducing food waste and business loss</h4>
+                    <div></div>
+                    <p>Design. Strategy.</p>
+                    </div>
+                </div>
+            </a>
+
+            <div class="guide-container closed">
+                <div class="guide-heading">
+                  <p class="CTA-text2">Content guide</p>
+                  <img class="close-icon" src="./Icons/x.svg">
+                </div>
+                <div class="content-guide">
+                    <a href="#PD-overview"><div class="guide-item"><p>Overview</p></div></a>
+                    <a href="#PD-context"><div class="guide-item"><p>Context</p></div></a>
+                    <a href="#PD-research"><div class="guide-item"><p>Research</p></div></a>
+                    <a href="#PD-process"><div class="guide-item"><p>Brainstorming & User flows</p></div></a>
+                    <a href="#PD-sketches"><div class="guide-item"><p>Low fidelity Wireframes</p></div></a>
+                    <a href="#PD-design"><div class="guide-item"><p>Design Solution</p></div></a>
+                    <a href="#PD-testing"><div class="guide-item"><p>Prototype</p></div></a>
+                    <a href="#PD-impact"><div class="guide-item"><p>Impact</p></div></a>
+                </div>
+            </div>
+
+            </main>
+
+            <footer>
+                <div id="footer-content">
+                    <p>Goziem Ajulibe, 2024</p>
+                    <div id="footer-icons">
+                        <a href="https://www.linkedin.com/in/goziem-ajulibe" class="icon"><img src="./Icons/linkedin.svg" alt="linkedin logo" ></a>
+                        <a href="https://github.com/GoziemAjulibe" class="icon"><img src="./Icons/github.svg" alt="github logo" ></a>
+                        <a href="https://dribbble.com/Goziem" class="icon"><img src="./Icons/dribbble.svg" alt="dribbble logo" ></a>
+                        <a href="https://www.behance.net/goziem" class="icon"><img src="./Icons/behance.svg" alt="behance logo" ></a>
+                        <a href="https://medium.com/@goziemajulibe" class="icon"><img src="./Icons/medium.svg" alt="medium logo" ></a>
+                    </div>
+                </div>
+              </footer>
+
+        <script src="./script.js"></script>
+
+    </body>
+
+</html>
+
