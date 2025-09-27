@@ -240,7 +240,7 @@ h2{
 
 button{
     width: 200px;
-    padding: 24px 48px;
+    padding: 16px 24px;
     border: none;
     border-radius: 8px;
     background-color: #6D0632;
@@ -1029,7 +1029,7 @@ input.default {
     }
 
     button{
-        padding: 16px 24px;
+        padding: 8px 12px;
     }
 
     #footer-content{
