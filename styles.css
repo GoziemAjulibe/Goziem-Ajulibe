@@ -403,7 +403,7 @@ footer{
 .summary{
     display: flex;
     flex-direction: row;
-    gap: 12em;
+    justify-content: space-between;
 }
 
 .space-above{
@@ -502,8 +502,16 @@ li{
 
 .block2{
     padding: 1.5em 1em;
-    background-color: #CDEBFA;
+    background-color: #FFEED4;
     border-left: 4px solid #011b33;
+    margin: 1em 0em;
+    padding: 1.5em 1em;
+}
+
+.block3{
+    padding: 1.5em 1em;
+    background-color: #FFEACD;
+    border-left: 4px solid #F2A100;
     margin: 1em 0em;
     padding: 1.5em 1em;
 }
@@ -547,6 +555,9 @@ li{
     padding-bottom: 5em;
 }
 
+.img-blue{
+    margin-bottom: 5em;
+}
 
 .usability-testing > .subsection{
     padding-top: 0em;
