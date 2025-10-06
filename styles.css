@@ -516,6 +516,14 @@ li{
     padding: 1.5em 1em;
 }
 
+.block4{
+    padding: 1.5em 1em;
+    background-color: #F1ECEC;
+    border-left: 4px solid #011b33;
+    margin: 1em 0em;
+    padding: 1.5em 1em;
+}
+
 .goals{
     display: flex;
     flex-direction: column;
